@@ -61,7 +61,7 @@ main {
 }
 
 .calculate {
-  min-width: 50%;
+  max-width: 100%;
   margin-left: 2rem;
   margin-top: 2rem;
 }
@@ -128,12 +128,24 @@ main {
   border-radius: 5px;
 }
 
+.number-per:hover {
+    background: var(--color-strong-cyan);
+}
+
 h4 {
   font-size: 1.6rem;
 }
 
 .people-info {
   position: relative;
+}
+
+.err {
+    position: absolute;
+    top: -50%;
+    right: 10%;
+    color: pink;
+    font-size: 1.5rem;
 }
 
 .person-img {
@@ -186,10 +198,22 @@ button {
   padding: 1rem 0;
   text-transform: uppercase;
   font-size: 2rem;
-  background: hsl(172, 67%, 45%, 0.3);
+  background: hsl(172, 67%, 45%);
   border: transparent;
   color: var(--color-dark-cyan);
   border-radius: 5px;
+}
+
+.custom {
+    background: var(--color-vlgrayish-cyan);
+    text-align: right;
+    padding-right: 1rem;
+    color: var(--color-dark-cyan);
+}
+
+.custom:hover {
+    border: 1px solid var(--color-strong-cyan);
+    background: var(--color-vlgrayish-cyan);
 }
 
 /* Media Queries */

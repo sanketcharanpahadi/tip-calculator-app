@@ -24,19 +24,12 @@
           <h4 class="bill">Bill</h4>
 
           <div class="amount-info">
-            <input
-              type="number"
-              name="number"
-              id="number"
-              class="number"
-              value="0"
-            />
+            <input type="number" name="number" id="number" class="number" />
             <img
               src="/images/icon-dollar.svg"
               class="dollar-img"
               alt="dollar sign"
             />
-            <!-- <span class="amount">0</span> -->
           </div>
 
           <h4 class="s-tip">Select Tip %</h4>
@@ -46,21 +39,22 @@
             <span class="number-per">15%</span>
             <span class="number-per">25%</span>
             <span class="number-per">50%</span>
-            <span class="number-per">Custom</span>
+            <!-- <span class="number-per">Custom</span> -->
+            <input
+              type="number"
+              name="Custom"
+              id="custom"
+              class="custom number-per"
+              placeholder="Custom"
+            />
           </div>
 
           <h4>Number of People</h4>
 
           <div class="people-info">
-            <input
-              type="number"
-              name="people"
-              id="people"
-              class="people"
-              value="0"
-            />
+            <input type="number" name="people" id="people" class="people" />
             <img src="./images/icon-person.svg" alt="" class="person-img" />
-            <!-- <span class="number-people">0</span> -->
+            <span class="err"></span>
           </div>
         </div>
 
@@ -71,11 +65,7 @@
               <span>/ person</span>
             </div>
 
-            <div class="right-1">
-              $0.00
-              <!-- <span>$</span>
-              <span>0.00</span> -->
-            </div>
+            <div class="right-1">$0.00</div>
           </div>
 
           <div class="total-amount">
@@ -84,11 +74,7 @@
               <span>/ person</span>
             </div>
 
-            <div class="right-2">
-              $0.00
-              <!-- <span></span>
-              <span></span> -->
-            </div>
+            <div class="right-2">$0.00</div>
           </div>
 
           <button class="reset">Reset</button>
