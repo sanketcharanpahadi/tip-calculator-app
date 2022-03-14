@@ -30,6 +30,12 @@ body {
 input,
 button {
   font-family: inherit;
+  cursor: pointer;
+}
+
+input:focus,
+button:focus {
+  outline: none;
 }
 
 header {
@@ -48,15 +54,14 @@ main {
 
 .container {
   display: flex;
-  max-width: 70%;
+  max-width: 100%;
   background: var(--color-white);
   padding: 3rem;
   border-radius: 25px;
-  /* justify-content: space-between; */
 }
 
 .calculate {
-  width: 50%;
+  min-width: 50%;
   margin-left: 2rem;
   margin-top: 2rem;
 }
@@ -79,15 +84,15 @@ main {
 [type="number"] {
   -webkit-appearance: none;
   -moz-appearance: textfield;
-  width: 38rem;
+  width: 90%;
   font-size: 2.4rem;
   background: var(--color-vlgrayish-cyan);
   border: transparent;
-  padding: 0.5rem 0;
-  border-radius: 10px;
+  padding: 0.8rem 0;
+  border-radius: 5px;
   text-align: right;
   color: var(--color-lgrayish-cyan);
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 .dollar-img {
@@ -108,8 +113,9 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .number-per {
@@ -139,7 +145,7 @@ h4 {
 
 .results {
   background: var(--color-dark-cyan);
-  width: 50%;
+  min-width: 50%;
   border-radius: 15px;
   padding: 5rem 0 4rem 0;
 }
@@ -186,4 +192,43 @@ button {
   border-radius: 5px;
 }
 
+/* Media Queries */
 
+@media (max-width: 821px) {
+
+    body {
+        padding: 5rem 0; 
+    }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .calculate {
+    margin: 0 0;
+  }
+
+  [type="number"] {
+    width: 310px;
+  }
+
+  .number-per {
+    width: 150px;
+  }
+
+  .people-info {
+    margin-bottom: 3rem;
+  }
+
+  .results {
+    padding: 3rem 0 2.5rem 0;
+  }
+
+  .tip-amount {
+      margin-bottom: 2rem;
+  }
+
+  button {
+      margin-top: 3rem;
+  }
+}
