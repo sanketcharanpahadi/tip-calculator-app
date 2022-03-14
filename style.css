@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-strong-cyan: hsl(172, 67%, 45%);
+  --color-dark-cyan: hsl(183, 100%, 15%);
+  --color-grayish-cyan: hsl(186, 14%, 43%);
+  --color-lgrayish-cyan: hsl(185, 41%, 84%);
+  --color-vlgrayish-cyan: hsl(189, 41%, 97%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Space Mono", monospace;
+  background: var(--color-lgrayish-cyan);
+  padding: 15rem 0;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 70%;
+  background: var(--color-white);
+  padding: 3rem;
+  border-radius: 25px;
+  /* justify-content: space-between; */
+}
+
+.calculate {
+  width: 50%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.calculate h4 {
+  color: var(--color-grayish-cyan);
+  margin-bottom: 1rem;
+}
+
+.bill {
+  font-size: 1.6rem;
+  color: var(--color-dark-cyan);
+}
+
+.amount-info {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  width: 38rem;
+  font-size: 2.4rem;
+  background: var(--color-vlgrayish-cyan);
+  border: transparent;
+  padding: 0.5rem 0;
+  border-radius: 10px;
+  text-align: right;
+  color: var(--color-lgrayish-cyan);
+  padding-right: 1rem;
+}
+
+.dollar-img {
+  position: absolute;
+  top: 50%;
+  display: block;
+  transform: translateY(-50%);
+  left: 3%;
+}
+
+.s-tip {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.percentage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.number-per {
+  font-size: 2.2rem;
+  background: var(--color-dark-cyan);
+  color: var(--color-white);
+  padding: 0.8rem 0rem;
+  width: 115px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+.people-info {
+  position: relative;
+}
+
+.person-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+}
+
+.results {
+  background: var(--color-dark-cyan);
+  width: 50%;
+  border-radius: 15px;
+  padding: 5rem 0 4rem 0;
+}
+
+.tip-amount,
+.total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.tip-amount {
+  margin-bottom: 4rem;
+}
+
+.results h4 {
+  color: var(--color-white);
+}
+
+.left-1 span,
+.left-2 span {
+  color: var(--color-grayish-cyan);
+  font-size: 1.5rem;
+}
+
+.right-1,
+.right-2 {
+  font-size: 4rem;
+  color: var(--color-strong-cyan);
+}
+
+button {
+  margin: 13rem auto 0 auto;
+  display: block;
+  width: 80%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: hsl(172, 67%, 45%, 0.3);
+  border: transparent;
+  color: var(--color-dark-cyan);
+  border-radius: 5px;
+}
+
+
