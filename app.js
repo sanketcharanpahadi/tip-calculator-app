@@ -5,6 +5,7 @@ const totalAmountEl = document.querySelector(".right-2");
 const percentEl = document.querySelectorAll(".number-per");
 const errorMsg = document.querySelector(".err");
 const customEl = document.querySelector(".custom");
+const resetBtn = document.querySelector(".reset");
 
 let percentTipValue = 0;
 let billValue = Number(billEl.value);
@@ -14,12 +15,7 @@ function calculateValue() {
   billValue = Number(billEl.value);
   noOfPeople = Number(noOfPeopleEl.value);
 
-  if (
-    noOfPeople === null ||
-    noOfPeople === "" ||
-    noOfPeople === 0 ||
-    typeof noOfPeople === "string"
-  ) {
+  if (noOfPeople === null || noOfPeople === 0) {
     noOfPeopleEl.style.border = "1px solid pink";
     errorMsg.textContent = "Can't be zero";
   } else {
@@ -53,7 +49,12 @@ for (let i = 0; i < percentEl.length; i++) {
   });
 }
 
-customEl.addEventListener("keyup", function() {
-    percentTipValue = Number(customEl.value);
-    calculateValue();
-})
+customEl.addEventListener("keyup", function () {
+  percentTipValue = Number(customEl.value);
+  calculateValue();
+});
+
+resetBtn.addEventListener("click", function () {
+  billEl.value = 0;
+  calculateValue();
+});

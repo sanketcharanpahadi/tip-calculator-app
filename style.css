@@ -129,7 +129,7 @@ main {
 }
 
 .number-per:hover {
-    background: var(--color-strong-cyan);
+  background: var(--color-strong-cyan);
 }
 
 h4 {
@@ -141,11 +141,11 @@ h4 {
 }
 
 .err {
-    position: absolute;
-    top: -50%;
-    right: 10%;
-    color: pink;
-    font-size: 1.5rem;
+  position: absolute;
+  top: -50%;
+  right: 10%;
+  color: pink;
+  font-size: 1.5rem;
 }
 
 .person-img {
@@ -205,24 +205,23 @@ button {
 }
 
 .custom {
-    background: var(--color-vlgrayish-cyan);
-    text-align: right;
-    padding-right: 1rem;
-    color: var(--color-dark-cyan);
+  background: var(--color-vlgrayish-cyan);
+  text-align: right;
+  padding-right: 1rem;
+  color: var(--color-dark-cyan);
 }
 
 .custom:hover {
-    border: 1px solid var(--color-strong-cyan);
-    background: var(--color-vlgrayish-cyan);
+  border: 1px solid var(--color-strong-cyan);
+  background: var(--color-vlgrayish-cyan);
 }
 
 /* Media Queries */
 
 @media (max-width: 821px) {
-
-    body {
-        padding: 5rem 0; 
-    }
+  body {
+    padding: 5rem 0;
+  }
 
   .container {
     flex-direction: column;
@@ -249,10 +248,10 @@ button {
   }
 
   .tip-amount {
-      margin-bottom: 2rem;
+    margin-bottom: 2rem;
   }
 
   button {
-      margin-top: 3rem;
+    margin-top: 3rem;
   }
 }
